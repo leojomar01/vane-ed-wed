@@ -1,0 +1,125 @@
+$border-color: 2px solid rgb(59, 4, 4);
+$b-size:40;
+.home{
+
+    
+    height: 100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+    position: relative;
+    overflow: hidden;
+    .bg{
+        position: absolute;
+         height: 100vh;
+        width: 100vw;
+        top: 0;
+        background-image: url('../../image/bg.png');
+        background-size: 100vw 100vh;
+        animation: showf 3s ease-in-out  ;
+    }
+    
+    .petals{
+        height: 100vh;
+        width: auto;
+        background-size: 100vh;
+        background-image: url('../../image/petals.gif');
+        opacity: .2;
+    }
+
+    .border-frame{
+        z-index: 99;
+            transition: 1s;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        height: 80vh;
+        width: 80vw;
+        .border:nth-child(1){
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: inherit;
+            position: absolute;
+            animation: border-vert 2s ease-in-out  ;
+            width:$b-size+vw;;
+            border-bottom: $border-color;
+            transition: 2s;
+        }
+          .border:nth-child(2){
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: inherit;
+            position: absolute;
+            width:$b-size+vw;
+            animation: border-vert 2s ease-in-out  ;
+            border-top: $border-color;
+            transition: 2s;
+        }
+          .border:nth-child(3){
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: $b-size+vh;
+            position: absolute;
+            width:inherit;
+            border-left: $border-color;
+            animation: border-hor 2s ease-in-out  ;
+            transition: 2s;
+        }
+          .border:nth-child(4){
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: $b-size+vh;
+            position: absolute;
+            width:inherit;
+            border-right: $border-color;
+            animation: border-hor 2s ease-in-out  ;
+            transition: 2s;
+        }
+  
+    }
+    
+}
+
+@keyframes border-vert {
+    0%{
+        width:0;
+    }
+    100%{
+        width:$b-size+vw;;
+    }
+    
+}
+@keyframes border-hor {
+    0%{
+        height:0;
+    }
+    100%{
+        height:$b-size+vw;;
+    }
+    
+}
+@keyframes showf {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fmove{
+    0%{
+       transform: rotate(-3deg)translate(-50%,-50%) ;
+    }
+    50%{
+       transform: rotate(3deg) translate(-50%,-50%);
+    }
+     100%{
+        transform: rotate(-3deg) translate(-50%,-50%);
+    }
+}
