@@ -13,6 +13,7 @@ function Welcome() {
             <div className="fl1"></div>
             <div className="fl2"></div>
             <div className="fl3"></div>
+            <div className="fl4"></div>
         </div>
     </div>
   )

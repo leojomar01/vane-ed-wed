@@ -3,7 +3,7 @@
     // display: flex;
     position: relative;
     width: 100vw;
-    // overflow: hidden;
+    overflow: hidden;
     .left{
         position: absolute;
         width: 50vw;
@@ -52,9 +52,21 @@
             aspect-ratio: 1.2/1;
             background-size: 45vh;
             background-repeat: no-repeat;
-            transform: rotate(40deg) translate(-50%,-50%);
+            transform: rotate(45deg) translate(-50%,-50%);
             background-image: url('../../image/f2.png');
             animation: zoom-in 53s infinite;
+        }
+        .fl4{
+            position: absolute;
+            top: -26%;
+            left: -15vw;
+            height: 50vh;
+            aspect-ratio: 1.2/1;
+            background-size: 45vh;
+            background-repeat: no-repeat;
+            transform: rotate(-120deg) translate(-50%,-50%);
+            background-image: url('../../image/f2.5.png');
+            animation: zoom-in 43s infinite;
         }
     }
 }
