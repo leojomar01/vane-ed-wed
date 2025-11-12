@@ -1,5 +1,5 @@
 import "./welcome.scss";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 function Welcome() {
   const [btnShow, setBtnShow] = useState(true);
@@ -13,6 +13,7 @@ function Welcome() {
     slides[1].classList.add('active');
     heart.classList.add('active');
     btns.classList.add('active');
+    setBtnShow(false)
   };
 
   return (
