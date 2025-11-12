@@ -1,13 +1,13 @@
 import './App.css';
+import Background from './Components/Background/Background';
 // import Home from './Components/Home/Home';
-import Welcome from './Components/Welcome/Welcome';
 
 function App() {
   return (
     <div className="App">
       {/* <Home/> */}
-      <Welcome/>
       
+      <Background/>
     </div>
   );
 }
