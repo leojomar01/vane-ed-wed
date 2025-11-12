@@ -10,12 +10,12 @@
         background-position: center;
 
         &:nth-child(1){
-                animation: flower1-ani1 3s ease-in-out, fmove infinite 20s ;
+                animation: flower1-ani1 3s ease-in-out, fmove infinite 17s ;
             top:  30%;
             left: 12%;
         }
         &:nth-child(2){
-                animation: flower1-ani2 3s ease-in-out, fmove infinite 25s  ;
+                animation: flower1-ani2 3s ease-in-out, fmove infinite 20s  ;
             top:  38%;
             left: 10%;
             height: 20vh;
@@ -33,7 +33,7 @@
         background-position: center;
         background-repeat: no-repeat;
         transform: translate(-50%,-50%);
-        animation: flower1-ani1 3s ease-in-out, fmove infinite 25s  ;
+        animation: flower1-ani1 3s ease-in-out, fmove infinite 16s  ;
         &:nth-child(3){
             background-image: url('../../image/f2.2.png');
             top: 8vh;
@@ -50,7 +50,7 @@
             background-image: url('../../image/f2.55.png');
             top: 95vh;
             left:20vw;
-            animation: flower1-ani3 3.2s ease-in-out, fmove infinite 25s  ;
+            animation: flower1-ani3 3.2s ease-in-out, fmove infinite 18s  ;
             height: 40vh;
             background-size: auto 40vh  ;
         }

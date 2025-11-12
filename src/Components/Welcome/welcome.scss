@@ -1,0 +1,80 @@
+.welcome{
+    height: 100vh;
+    // display: flex;
+    position: relative;
+    width: 100vw;
+    // overflow: hidden;
+    .left{
+        position: absolute;
+        width: 50vw;
+        height: 100vh;
+        left: 0;
+
+    }
+    .right{
+        width: 50vw;
+        border: 1px solid red;
+        // background-color: red;
+        position: absolute;
+        height: 100vh;
+        right: 0;
+        
+
+        .fl1{
+            position: absolute;
+            top: 10%;
+            left: 35vw;
+            height: 50vh;
+            aspect-ratio: 1.2/1;
+            background-size: 45vh;
+            background-repeat: no-repeat;
+            transform: rotate(0deg) translate(-50%,-50%);
+            background-image: url('../../image/f2.png');
+            animation: zoom-in 53s infinite;
+        }
+        .fl2{
+            position: absolute;
+            top: 26%;
+            left: 15vw;
+            height: 50vh;
+            aspect-ratio: 1.2/1;
+            background-size: 45vh;
+            background-repeat: no-repeat;
+            transform: rotate(-90deg) translate(-50%,-50%);
+            background-image: url('../../image/f2.5.png');
+            animation: zoom-in 43s infinite;
+        }
+        .fl3{
+            position: absolute;
+            top: 80%;
+            left: -3vw;
+            height: 50vh;
+            aspect-ratio: 1.2/1;
+            background-size: 45vh;
+            background-repeat: no-repeat;
+            transform: rotate(40deg) translate(-50%,-50%);
+            background-image: url('../../image/f2.png');
+            animation: zoom-in 53s infinite;
+        }
+    }
+}
+
+
+@keyframes zoom-in {
+    0%{
+        scale: .9;
+    }
+    25%{
+        scale: 1;
+    }
+    50%{
+        scale:.9;
+    }
+    75%{
+        scale: 1;
+    }
+    100%{
+        scale: .9;
+    }
+    
+}
