@@ -44,24 +44,41 @@
 }
 
 #pri-sponsor{
-    // display: none;
+     *{
+        animation: show-ele 3s ease-out forwards;
+        opacity:0 ;
+    }
+    display: none;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     width: 80vw;
     z-index: 999;
+    h3{
+        color:black;
+        animation-delay:1.5s;
+    }
     
     h1{
         font-family: font1;
+                animation-delay:1s;
         font-size: 2.5rem;
+    }
+    h2{
+        font-family: font2;
+        font-size: 2rem;
+            animation-delay:2s;
+
     }
     p{
         color: black;
         font-weight: 600;
         text-align: start;
+                animation-delay:2.5s;
     }
     .sponsor{
+        margin-top: -1rem;
         gap: .5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -69,6 +86,126 @@
         justify-content: center;
         text-align: center;
         padding: 1rem;
+
+        .godmother,.godfather{
+            @for $i from 16 through 0 {
+                p:nth-child(#{$i}){
+                animation-delay:#{($i * .2+3)}+s;
+            }
+        }
+                    
+        }
     }
     
 }
+
+
+#secondary-sponsors{
+      *{
+        animation: show-ele 3s ease-out forwards;
+        opacity:0 ;
+    }
+    // display: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    z-index: 999;
+    padding: 1rem;
+    text-align: center;
+    .bestman-maidofhonor{
+        h2{
+            font-size: 1.2rem;
+        }
+    }
+
+     p{
+        color: black;
+        font-weight: 600;
+        text-align: start;
+        font-size: .7rem;
+        margin-top: .5rem;
+    }
+    h2{
+        font-family: font1;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    
+    .abay,.to-light-our-path,.to-clothe-us-as-one,.bestman-maidofhonor{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: .5rem;
+    }
+    .to-bind-us-together{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    @for $i from 16 through 0 {
+                p:nth-child(#{$i}){
+                animation-delay:#{($i * .2+3)}+s;
+            }
+        }
+
+        @for $i from 16 through 0 {
+                h2:nth-child(#{$i}){
+                animation-delay:#{($i * .2+1)}+s;
+            }
+        }
+}
+
+#secondary-sponsor2{
+      *{
+        animation: show-ele 3s ease-out forwards;
+        opacity:0 ;
+    }
+    display: none;
+ position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    z-index: 999;
+    padding: 1rem;
+    text-align: center;
+
+         p{
+        color: black;
+        font-weight: 600;
+        text-align: start;
+        font-size: .7rem;
+        margin-top: .1rem;
+    }
+    h2{
+        font-family: font1;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .bearer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bearers-and-flower-girls{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+
+    @for $i from 16 through 0 {
+                p:nth-child(#{$i}){
+                animation-delay:#{($i * .2+3)}+s;
+            }
+        }
+
+        @for $i from 16 through 0 {
+                h2:nth-child(#{$i}){
+                animation-delay:#{($i * .2+1)}+s;
+            }
+        }
+
+}
+

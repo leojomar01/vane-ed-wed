@@ -47,21 +47,22 @@ function Home() {
         <div id="pri-sponsor">
           <h1>Ignacio - Inocente</h1>
           <h3>Nuptials</h3>
+          <br/>
           <h2>Principal Sponsor</h2>
           <div className="sponsor">
             <div className="godfather">
-            <p>MR. EDUARDO BASILIO N. JOSON</p>
-            <p>MR. BERNARD HERERRA</p>
-            <p>ATTY. TOMAS F. LAHOM III</p>
-            <p>MR. EFREN CARPIO</p>
-            <p>MR. AL NIETES</p>
-            <p>MR. CONRAD HIZON</p>
-            <p>MR. BRAIH MOHD AL-MOAWI</p>
-            <p>MR. JOSELITO GONZALES</p>
-            <p>MR. JUNE VILLANUEVA</p>
-            <p>MR. MARCELO ENRIQUEZ</p>
-            <p>MR. ISMAEL TAMAYO</p>
-            <p>MR. CHRISTOPHER DELFIN</p>
+              <p>MR. EDUARDO BASILIO N. JOSON</p>
+              <p>MR. BERNARD HERERRA</p>
+              <p>ATTY. TOMAS F. LAHOM III</p>
+              <p>MR. EFREN CARPIO</p>
+              <p>MR. AL NIETES</p>
+              <p>MR. CONRAD HIZON</p>
+              <p>MR. BRAIH MOHD AL-MOAWI</p>
+              <p>MR. JOSELITO GONZALES</p>
+              <p>MR. JUNE VILLANUEVA</p>
+              <p>MR. MARCELO ENRIQUEZ</p>
+              <p>MR. ISMAEL TAMAYO</p>
+              <p>MR. CHRISTOPHER DELFIN</p>
           </div>
           <div className="godmother">
                <p>MRS. JIN MACASPAC</p>
@@ -81,10 +82,103 @@ function Home() {
           </div>
           </div>
 
+          
+        
+
 
 
 
         </div>
+
+        <div id="secondary-sponsors">
+          <div className="bestman-maidofhonor">
+         <div className="bm">
+             <h2>Best Man</h2>
+            <p>MR. KHIAN RAFAEL I. FRANCISCO</p>
+         </div>
+
+          <div className="moh">
+                <h2>Maid of Honor</h2>
+            <p>MRS. RAYANA KAMILLE B. MUYOT</p>
+          </div>
+          </div>
+
+  <h2>To Light Our Path</h2>
+  <div className="to-light-our-path">
+    <p>MR. RALPH JACOB N. PASCUA</p>
+    <p>MS. CHRISTINE KYLE I. FRANCISCO</p>
+  </div>
+
+  <h2>To Clothe Us As One</h2>
+  <div className="to-clothe-us-as-one">
+    <p>MR. JOSE DE SAN JOSE</p>
+    <p>MS. JUNIEVER E. VALDEZ</p>
+  </div>
+
+  <h2>To Bind Us Together</h2>
+  <div className="to-bind-us-together">
+    <p>MR. JAM VICTOR INOCENTE</p>
+    <p>MS. KATE FERNANDO</p>
+  </div>
+
+    <div className="abay">
+        <div className="groomsmen">
+      <h2>Groom’s Men</h2>
+        <p>MR. LEEYAN C. DELOS SANTOS</p>
+        <p>MR. DHAN DENVER CUNANAN</p>
+        <p>MR. IVAN DALE C. LARON</p>
+      </div>
+
+      <div className="bridesmaid">
+        <h2>Bride’s Maid</h2>
+        <p>MS. ANDI ZSUFIA MARIE HIZON</p>
+        <p>MS. FRANXENE LEI I. CORPUZ</p>
+        <p>MS. LISH LAY SHAINE MAGNO</p>
+      </div>
+    </div>
+
+  
+
+        </div>
+
+  <div id="secondary-sponsor2">
+    <div className="bearer">
+  <div className="coin-bearer">
+    <h2>Coin Bearer</h2>
+    <p>ACE ROB C. IGNACIO</p>
+  </div>
+
+  <div className="bible-bearer">
+  <h2>Bible Bearer</h2>
+    <p>DRAKE SKYLER A. NAVA</p>
+  </div>
+
+  <div className="ring-bearer">
+  <h2>Ring Bearer</h2>
+    <p>FRANCIS DAVE CORPUZ</p>
+  </div>
+
+  <div className="little-bride">
+  <h2>Little Bride</h2>
+    <p>LILLIANA REIGN DELA MERCED</p>
+  </div>
+  </div>
+
+  <h2>Bearers & Flower Girls</h2>
+  <div className="bearers-and-flower-girls">
+    <p>JESIAH RAHJE LEXIA SORIANO</p>
+    <p>GAVINE IOFEL MATEO</p>
+    <p>RYZA IGNACIO</p>
+    <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
+    <p>LAURELIN GALADRIEL LAHOM</p>
+    <p>AMARAH JAZLYN I. POSADAS</p>
+    <p>JAIDEN CAMRON P. IGNACIO</p>
+    <p>MARK ROLAN CODILANA JR.</p>
+    <p>MATT CAYDENN GO</p>
+  </div>
+  </div>
+
+
     </div>
   )
 }

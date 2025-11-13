@@ -32,23 +32,12 @@ function Welcome() {
     slides[0].classList.remove('active');
     slides[1].classList.remove('active');
     heart.classList.remove('active');
-    }, 3000);
+    }, 300);
     return () => clearTimeout(id); 
   }, []);
   
 
-  const bbtn = () =>{
-    setBtnShow(true)
-      const slides = document.querySelectorAll('.slide');
-    const heart = document.querySelector('.heart');
-    if (pageCounter>=1){
-    setPageCounter(pageCounter = pageCounter-1);
-    }
-    console.log(pageCounter)
-    slides[0].classList.remove('active');
-    slides[1].classList.remove('active');
-    heart.classList.remove('active');
-  };
+
 
   return (
     <div className='welcome'>
@@ -88,11 +77,6 @@ function Welcome() {
       )}
       {pageCounter===2 && (
         <div className="">asdhjkasjgd</div>
-      )}
-
-      {pageCounter >= 1 && (
-        <div className="back-btn " onClick={bbtn}>&larr;</div>
-
       )}
 
     </div>
