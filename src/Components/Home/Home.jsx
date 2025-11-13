@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './home.scss';
 import './flower-pos.scss';
 import './intro.scss';
@@ -6,14 +6,28 @@ import './btn.scss';
 
 function Home() {
     var [pageCounter, setPageCounter] = useState(1);
+    const [btnShow,setBtnShwow] = useState(true);
 
 const next = ()=>{
   setPageCounter(pageCounter+1)
+  setBtnShwow(false)
+  btnPress()
+
 }
 const back = ()=>{
   setPageCounter(pageCounter-1)
+  setBtnShwow(false)
+  btnPress()
 }
 
+
+const btnPress = () =>{
+
+  const id = setTimeout(() => {
+     setBtnShwow(true)
+    }, 3000);
+    return () => clearTimeout(id);
+}
 
 
   return (
@@ -104,6 +118,7 @@ const back = ()=>{
 
               {pageCounter===3&&(
              <div id="secondary-sponsors">
+              <h2 className='ss'>Secondary Sponsor</h2>
           <div className="bestman-maidofhonor">
          <div className="bm">
              <h2>Best Man</h2>
@@ -200,24 +215,27 @@ const back = ()=>{
 
           {pageCounter===5&&(
             <div id="details">
+              details
             </div>
           )}
    
 
-        <div id="btns">
-          {pageCounter>=2&&(
-            <div className="btn-back btn" onClick={back}>
-            Prev
-          </div>
-          )}
+          {btnShow&&(
+            <div id="btns">
+              {pageCounter>=2&&(
+                <div className="btn-back btn" onClick={back}>
+                Prev
+              </div>
+              )}
 
-          {pageCounter<=5&&(
-            <div className="btn btn-next" onClick={next}>
-              Next
-            </div>
+              {pageCounter<=4 &&(
+                <div className="btn btn-next" onClick={next}>
+                  Next
+                </div>
+              )}
+             </div>
           )}
          
-        </div>
     </div>
   )
 }
