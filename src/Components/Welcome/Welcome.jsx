@@ -27,14 +27,12 @@ function Welcome() {
         const slides = document.querySelectorAll('.slide');
     const heart = document.querySelector('.heart');
     const id = setTimeout(() => {
-
-
     const loader = document.querySelector('.loader');
     loader.classList.add('active');
     slides[0].classList.remove('active');
     slides[1].classList.remove('active');
     heart.classList.remove('active');
-    }, 300);
+    }, 3000);
     return () => clearTimeout(id); 
   }, []);
   
