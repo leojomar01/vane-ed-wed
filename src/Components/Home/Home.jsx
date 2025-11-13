@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './home.scss';
 import './flower-pos.scss';
 import './intro.scss';
+import './btn.scss';
+
 function Home() {
+    var [pageCounter, setPageCounter] = useState(1);
+
+const next = ()=>{
+  setPageCounter(pageCounter+1)
+}
+const back = ()=>{
+  setPageCounter(pageCounter-1)
+}
+
+
+
   return (
     <div className='home'>
 
@@ -36,15 +49,20 @@ function Home() {
           <div className="flower4"></div>
         </div>
 
-        <div id="intro">
+
+        {pageCounter===1&&(
+           <div id="intro">
            <h1 className='text'>Eduardson</h1>
            <p className='text'>C. IGNACIO</p>
            <h3 className='text'>&</h3>
            <h1 className='text'>Vanessa Mae</h1>
            <p className='text'>R. INOCENTE</p>
            <h2 className='text'>Invite You As they say I DO</h2>
-        </div>
-        <div id="pri-sponsor">
+            </div>
+          )}
+
+          {pageCounter===2&&(
+            <div id="pri-sponsor">
           <h1>Ignacio - Inocente</h1>
           <h3>Nuptials</h3>
           <br/>
@@ -81,16 +99,11 @@ function Home() {
               <p>MRS. EVELYN CAIRLAN</p>
           </div>
           </div>
+            </div>
+          )}
 
-          
-        
-
-
-
-
-        </div>
-
-        <div id="secondary-sponsors">
+              {pageCounter===3&&(
+             <div id="secondary-sponsors">
           <div className="bestman-maidofhonor">
          <div className="bm">
              <h2>Best Man</h2>
@@ -140,45 +153,71 @@ function Home() {
   
 
         </div>
+          )}
 
-  <div id="secondary-sponsor2">
-    <div className="bearer">
-  <div className="coin-bearer">
-    <h2>Coin Bearer</h2>
-    <p>ACE ROB C. IGNACIO</p>
-  </div>
+       
 
-  <div className="bible-bearer">
-  <h2>Bible Bearer</h2>
-    <p>DRAKE SKYLER A. NAVA</p>
-  </div>
+              {pageCounter===4&&(
+            <div id="secondary-sponsor2">
+          <div className="bearer">
+        <div className="coin-bearer">
+          <h2>Coin Bearer</h2>
+          <p>ACE ROB C. IGNACIO</p>
+        </div>
 
-  <div className="ring-bearer">
-  <h2>Ring Bearer</h2>
-    <p>FRANCIS DAVE CORPUZ</p>
-  </div>
+        <div className="bible-bearer">
+        <h2>Bible Bearer</h2>
+          <p>DRAKE SKYLER A. NAVA</p>
+        </div>
 
-  <div className="little-bride">
-  <h2>Little Bride</h2>
-    <p>LILLIANA REIGN DELA MERCED</p>
-  </div>
-  </div>
+        <div className="ring-bearer">
+        <h2>Ring Bearer</h2>
+          <p>FRANCIS DAVE CORPUZ</p>
+        </div>
 
-  <h2>Bearers & Flower Girls</h2>
-  <div className="bearers-and-flower-girls">
-    <p>JESIAH RAHJE LEXIA SORIANO</p>
-    <p>GAVINE IOFEL MATEO</p>
-    <p>RYZA IGNACIO</p>
-    <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
-    <p>LAURELIN GALADRIEL LAHOM</p>
-    <p>AMARAH JAZLYN I. POSADAS</p>
-    <p>JAIDEN CAMRON P. IGNACIO</p>
-    <p>MARK ROLAN CODILANA JR.</p>
-    <p>MATT CAYDENN GO</p>
-  </div>
-  </div>
+        <div className="little-bride">
+        <h2>Little Bride</h2>
+          <p>LILLIANA REIGN DELA MERCED</p>
+        </div>
+        </div>
 
+        <h2>Bearers & Flower Girls</h2>
+        <div className="bearers-and-flower-girls">
+          <p>JESIAH RAHJE LEXIA SORIANO</p>
+          <p>GAVINE IOFEL MATEO</p>
+          <p>RYZA IGNACIO</p>
+          <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
+          <p>LAURELIN GALADRIEL LAHOM</p>
+          <p>AMARAH JAZLYN I. POSADAS</p>
+          <p>JAIDEN CAMRON P. IGNACIO</p>
+          <p>MARK ROLAN CODILANA JR.</p>
+          <p>MATT CAYDENN GO</p>
+        </div>
+        </div>
+          )}
 
+        
+
+          {pageCounter===5&&(
+            <div id="details">
+            </div>
+          )}
+   
+
+        <div id="btns">
+          {pageCounter>=2&&(
+            <div className="btn-back btn" onClick={back}>
+            Prev
+          </div>
+          )}
+
+          {pageCounter<=5&&(
+            <div className="btn btn-next" onClick={next}>
+              Next
+            </div>
+          )}
+         
+        </div>
     </div>
   )
 }

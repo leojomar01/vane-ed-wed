@@ -72,12 +72,8 @@ function Welcome() {
         <div className="name"></div>
       </div>
 
-      {pageCounter===1 && (
-        <div className="home"><Home/></div>
-      )}
-      {pageCounter===2 && (
-        <div className="">asdhjkasjgd</div>
-      )}
+
+     
 
     </div>
   );

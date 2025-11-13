@@ -4,7 +4,6 @@
     top: 50%;
     left: 50%;
     z-index: 999;
-    display: none;
     *{
         animation: show-ele 3s ease-out forwards;
         opacity:0 ;
@@ -48,7 +47,6 @@
         animation: show-ele 3s ease-out forwards;
         opacity:0 ;
     }
-    display: none;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -162,7 +160,6 @@
         animation: show-ele 3s ease-out forwards;
         opacity:0 ;
     }
-    display: none;
  position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
