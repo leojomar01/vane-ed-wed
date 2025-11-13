@@ -1,3 +1,19 @@
+@font-face {
+  font-family: font1; /* set name */
+  src: url(font1.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: font2; /* set name */
+  src: url(font2.ttf); /* url of the font */
+}
+*{
+    color: #873802;
+}
+
+
+
+
 .welcome{
     height: 100vh;
     // display: flex;
@@ -5,9 +21,11 @@
     width: 100vw;
     overflow: hidden;
     *{
-        transition: 3.5s;
-    }
+            transition: 3.5s;
+        }
+   
     .left{
+         
         position: absolute;
         width: 50vw;
         height: 100vh;
@@ -143,7 +161,30 @@
         }
     }
 }
+.back-btn{
+    position: absolute;
+    // background-color: red;
+    left: 10%;
+    top: 5%;
+    font-size: 1.5rem;
+    color:rgb(59, 4, 4);
+    animation: show-ele 2s ease-in-out ;
+}
 
+.loader{
+    position: absolute;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    background-image: url('../../image/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9999;
+}
+.loader.active{
+    opacity: 0;
+    display: none;
+}
 .left.active{
         left: -100%;
         transition: 10s;
@@ -160,6 +201,17 @@
         left: 300%;
         transition: 6s;
     }
+}
+@keyframes show-ele {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+    
 }
 
 
