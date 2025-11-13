@@ -20,13 +20,14 @@
         background-repeat: no-repeat;
         background-size: 25vh;
         background-position: center;
-        animation: fmove infinite 16s;
-     
-
+        // animation: hbeat infinite 1016s;
+        height: 200vh;
 }
 .heart.active,.btns.active{
         opacity: 0;
-        left:200%;
+        height: 200vh;
+        background-size: 325vh;
+
 }
 .btns{
        position: absolute;

@@ -24,6 +24,8 @@
             transform: rotate(0deg) translate(-50%,-50%);
             background-image: url('../../image/f2.png');
             animation: zoom-in 53s infinite;
+        transition: 4.5s;
+
             
         }
         .fl2{
@@ -61,6 +63,8 @@
             transform: rotate(-120deg) translate(-50%,-50%);
             background-image: url('../../image/f2.5.png');
             animation: zoom-in 43s infinite;
+            transition: 4s;
+            
         }
     }
     .right{
@@ -83,6 +87,8 @@
             transform: rotate(10deg) translate(-50%,-50%);
             background-image: url('../../image/f2.png');
             animation: zoom-in 53s infinite;
+            transition: 4s;
+
         }
         .fl2{
             position: absolute;
@@ -119,7 +125,10 @@
             transform: rotate(-80deg) translate(-50%,-50%);
             background-image: url('../../image/f2.5.png');
             animation: zoom-in 43s infinite;
+            transition: 4s;
+
         }
+
         .fl5{
             position: absolute;
             top: 2%;
@@ -135,12 +144,41 @@
     }
 }
 
-
 .left.active{
-    left: -100%;
+        left: -100%;
+        transition: 10s;
+
+    .fl1,.fl3{
+        left: 300%;
+    }
+    .fl5{
+        transition: 8s;
+        left: 300%;
+    }
+
+    .fl2,.fl4,.fl6{
+        left: 300%;
+        transition: 6s;
+    }
 }
+
+
 .right.active{
     right: -100%;
+
+    
+    .fl1,.fl3{
+        left: 300%;
+    }
+    .fl5{
+        transition: 8s;
+        left: 300%;
+    }
+
+    .fl2,.fl4,.fl6{
+        left: 300%;
+        transition: 6s;
+    }
 }
 
 @keyframes zoom-in {

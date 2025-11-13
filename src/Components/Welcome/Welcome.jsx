@@ -1,3 +1,4 @@
+import Home from "../Home/Home";
 import "./welcome.scss";
 import React, { useState } from 'react';
 
@@ -8,12 +9,15 @@ function Welcome() {
     const slides = document.querySelectorAll('.slide');
     const heart = document.querySelector('.heart');
     const btns = document.querySelector('.btns');
+    // const home = document.querySelector('.home');
 
     slides[0].classList.add('active');
     slides[1].classList.add('active');
     heart.classList.add('active');
     btns.classList.add('active');
+    // home.classList.add('active');
     setBtnShow(false)
+    // console.log(home)
   };
 
   return (
@@ -34,12 +38,19 @@ function Welcome() {
 
       {btnShow && (
         <div className="btns" onClick={rbtn}>
-          Click Me
+          Click Here
         </div>
       )}
 
       <div className="heart">
       </div>
+      {/* <div className="home active">
+        <Home/>
+      </div> */}
+
+      {!btnShow && (
+        <Home/>
+      )}
     </div>
   );
 }
