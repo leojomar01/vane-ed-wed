@@ -1,6 +1,7 @@
-import React, {  useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import './home.scss';
 import './flower-pos.scss';
+import './new-flower-pos.scss';
 import './intro.scss';
 import './btn.scss';
 
@@ -8,10 +9,12 @@ function Home() {
     var [pageCounter, setPageCounter] = useState(1);
     const [btnShow,setBtnShwow] = useState(true);
 
+   
+
 const next = ()=>{
   setPageCounter(pageCounter+1)
   setBtnShwow(false)
-  btnPress()
+  btnPress(1)
 
 }
 const back = ()=>{
@@ -20,19 +23,33 @@ const back = ()=>{
   btnPress()
 }
 
+useEffect(()=>{
+        const flowers = document.querySelector('.flowers');
+        setTimeout(() => {
+        flowers.classList.add('page1')
+        }, 100);
+},[])
 
-const btnPress = () =>{
 
-  const id = setTimeout(() => {
-     setBtnShwow(true)
-    }, 300);
+
+const btnPress = (e) =>{
+        const flowers = document.querySelector('.flowers');
+        flowers.classList.remove(`page${pageCounter}`)
+        if(e===1){
+          flowers.classList.add(`page${pageCounter+1}`)
+        }else{
+          flowers.classList.add(`page${pageCounter-1}`)
+        }
+  console.log(pageCounter)
+      const id = setTimeout(() => {
+        setBtnShwow(true)
+        }, 300);
     return () => clearTimeout(id);
 }
 
 
   return (
     <div className='home'>
-
       <div className="bg"></div>
         <div className="border-frame">
           <div className="border">
@@ -44,23 +61,48 @@ const btnPress = () =>{
           <div className="border">
           </div>
         </div>
-
+        <div className="petals"></div>
         
 
 
-
-
-        <div className="petals"></div>
-        <div className="crystal"></div>
+       
         <div className="flowers">
-          <div className="flower1"></div>
-          <div className="flower1"></div>
-          <div className="flower2"></div>
-          <div className="flower2"></div>
-          <div className="flower2"></div>
-          <div className="flower2"></div>
-          <div className="flower3"></div>
-          <div className="flower4"></div>
+          <div className="flower">
+            <img src="./image/f1.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f1.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f2.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f2.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f2.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f2.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f3.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f3.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f4.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f4.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f4.png" alt="" />
+          </div>
+          <div className="flower">
+            <img src="./image/f2.png" alt="" />
+          </div>
         </div>
 
 

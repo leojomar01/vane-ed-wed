@@ -1,0 +1,432 @@
+.flowers {
+    .flower{
+        height: 0vh;
+        aspect-ratio: 1/1;
+        position: absolute;
+        &:nth-child(odd){
+            animation: flower1-ani 4s , fmove infinite 20s;
+        }
+        &:nth-child(even){
+            animation: flower1-ani 4s , fmove infinite 15s;
+        }
+        img{
+            height: inherit;
+            position: absolute;
+        }
+        &:nth-child(1){
+            top: 23%;
+            left: 5%;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+        &:nth-child(2){
+            top: 29%;
+            left: 7%;
+            img{
+                transform: rotate(-6deg) ;
+            }
+        }
+        &:nth-child(3){
+            top: 10%;
+            right: -40%;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+        &:nth-child(4){
+            top: 7%;
+            right: -15%;
+            img{
+                transform: rotate(60deg)  scalex(-1);
+            }
+        }
+          &:nth-child(5){
+            top: 90%;
+            right:42%;
+            img{
+                transform: rotate(160deg) ;
+            }
+        }
+         &:nth-child(6){
+            top: 93%;
+            right: 25%;
+            img{
+                transform: rotate(-120deg) scalex(-1) ;
+            }
+        }
+            &:nth-child(7){
+            top: 53%;
+            right: -40%;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+               &:nth-child(8){
+            top: 65%;
+            right: -20%;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+             &:nth-child(9){
+            top: 95%;
+            right: 20%;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+                 &:nth-child(10){
+            top: 0%;
+            right: 80%;
+            img{
+                transform: rotate(-180deg) ;
+            }
+        }
+        &:nth-child(11){
+            top: 98%;
+            right: -100%;
+            img{
+                transform: rotate(360deg) ;
+            }
+        }
+        &:nth-child(12){
+            top: -100%;
+            right: -50%;
+            img{
+                transform: rotate(90deg) ;
+            }
+        }
+    }
+}
+
+
+
+.flowers.page2,.flowers.page5{
+    .flower{
+        height: 40vh;
+        img{
+            height: inherit;
+        }
+        &:nth-child(1){
+            top: 63%;
+            left: 65%;
+            height: 30vh;
+            img{
+                transform: rotate(20deg)  scalex(-1);
+            }
+        }
+        &:nth-child(2){
+            top: 49%;
+            left: 7%;
+            height: 40vh;
+            img{
+                transform: rotate(-6deg) ;
+            }
+        }
+        &:nth-child(3){
+            top: 10%;
+            right: 40%;
+            height: 40vh;
+            img{
+                transform: rotate(260deg) ;
+            }
+        }
+        &:nth-child(5){
+            top: 7%;
+            right:-10%;
+            height: 30vh;
+            img{
+                transform: rotate(440deg)  scalex(-1);
+            }
+        }
+          &:nth-child(4){
+            top: 90%;
+            right: 42%;
+            img{
+                transform: rotate(280deg)  scaleX(-1);
+            }
+        }
+         &:nth-child(6){
+            top: 0%;
+            right: -15%;
+            height: 40vh;
+            img{
+                transform: rotate(280deg) scalex(1) ;
+            }
+        }
+            &:nth-child(7){
+            top: 53%;
+            right: 100%;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+
+            }
+        }
+               &:nth-child(8){
+            top: 65%;
+            right: -100%;
+            height: 10vh;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+             &:nth-child(9){
+            top: 90%;
+            right: 0%;
+            height: 20vh;
+            img{
+                transform: rotate(-40deg) ;
+            }
+        }
+                 &:nth-child(11){
+            top: 98%;
+            right: 50%;
+            height: 20vh;
+            img{
+                transform: rotate(360deg) ;
+            }
+        }
+                      &:nth-child(10){
+            top: 98%;
+            right: 100%;
+            height: 20vh;
+            img{
+                transform: rotate(360deg) ;
+            }
+        }
+                     &:nth-child(12){
+            top: 90%;
+            right: -20%;
+            img{
+                transform: rotate(90deg) ;
+            }
+        }
+    }
+}
+
+
+.flowers.page1,.flowers.page4{
+    .flower{
+        height: 40vh;
+        img{
+            height: inherit;
+            position: absolute;
+        }
+        &:nth-child(1){
+            top: 23%;
+            left: 5%;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+        &:nth-child(2){
+            top: 29%;
+            left: 7%;
+            height: 25vh;
+            img{
+                transform: rotate(-6deg) ;
+            }
+        }
+        &:nth-child(3){
+            top: 10%;
+            right: -40%;
+            height: 40vh;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+        &:nth-child(4){
+            top: 7%;
+            right: -15%;
+            height: 40vh;
+            img{
+                transform: rotate(60deg)  scalex(-1);
+            }
+        }
+          &:nth-child(5){
+            top: 90%;
+            right:42%;
+            height: 40vh;
+            img{
+                transform: rotate(160deg) ;
+            }
+        }
+         &:nth-child(6){
+            top: 93%;
+            right: 25%;
+            height: 40vh;
+            img{
+                transform: rotate(-120deg) scalex(-1) ;
+            }
+        }
+            &:nth-child(7){
+            top: 53%;
+            right: -40%;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+               &:nth-child(8){
+            top: 65%;
+            right: -20%;
+            height: 20vh;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+             &:nth-child(9){
+            top: 95%;
+            right: 20%;
+            height: 20vh;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+                 &:nth-child(10){
+            top: 0%;
+            right: 80%;
+            height: 20vh;
+            img{
+                transform: rotate(-180deg) ;
+            }
+        }
+        &:nth-child(11){
+            top: 98%;
+            right: -100%;
+            height: 0vh;
+            img{
+                transform: rotate(360deg) ;
+            }
+        }
+        &:nth-child(12){
+            top: -100%;
+            right: -50%;
+            img{
+                transform: rotate(90deg) ;
+            }
+        }
+    }
+}
+
+
+.flowers.page3, .flowers.page6{
+    .flower{
+        height: 40vh;
+        img{
+            height: inherit;
+            position: absolute;
+        }
+        &:nth-child(5){
+            top: 3%;
+            left: 5%;
+            img{
+                transform: rotate(-50deg) ;
+            }
+        }
+        &:nth-child(9){
+            top: 2%;
+            left: 7%;
+            height: 25vh;
+            img{
+                transform: rotate(-186deg) ;
+            }
+        }
+        &:nth-child(12){
+            top: 10%;
+            right: -30%;
+            height: 40vh;
+            img{
+                transform: rotate(30deg) ;
+            }
+        }
+        &:nth-child(4){
+            top: 57%;
+            right: -35%;
+            height: 40vh;
+            img{
+                transform: rotate(120deg)  scalex(-1);
+            }
+        }
+          &:nth-child(1){
+            top: 90%;
+            right:42%;
+            height: 30vh;
+            img{
+                transform: rotate(3deg) ;
+            }
+        }
+         &:nth-child(6){
+            top: 93%;
+            right: 65%;
+            height: 30vh;
+            img{
+                transform: rotate(-120deg) scalex(-1) ;
+            }
+        }
+            &:nth-child(11){
+            top: 53%;
+            right: -40%;
+            img{
+                transform: rotate(-20deg) scalex(-1) ;
+            }
+        }
+               &:nth-child(8){
+            top: 65%;
+            right: -10%;
+            height:20vh;
+            img{
+                transform: rotate(0deg) scalex(-1) ;
+            }
+        }
+             &:nth-child(2){
+            top: 95%;
+            right: 0%;
+            height: 20vh;
+            img{
+                transform: rotate(-10deg) ;
+            }
+        }
+                 &:nth-child(10){
+            top: 3%;
+            right: 90%;
+            height: 20vh;
+            img{
+                transform: rotate(-200deg) ;
+            }
+        }
+        &:nth-child(7){
+            top: 98%;
+            right: -100%;
+            height: 0vh;
+            img{
+                transform: rotate(360deg) ;
+            }
+        }
+        &:nth-child(3){
+            top: -100%;
+            right: -50%;
+            img{
+                transform: rotate(90deg) ;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flower1-ani{
+    from{
+        opacity: 0;
+    }
+}

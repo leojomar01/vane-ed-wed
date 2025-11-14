@@ -9,7 +9,15 @@ function Welcome() {
   // const [timeoutId, setTimeoutId] = useState(null);
     
 
+   const playBg = () => {
+    const backgroundAudio = document.getElementById('backgroundAudio');
+    backgroundAudio.play().catch(error => {
+      console.error("Audio playback failed: ", error);
+    });
+  };
+
   const rbtn = () => {
+    playBg()
     setBtnShow(false)
     const slides = document.querySelectorAll('.slide');
     const heart = document.querySelector('.heart');
@@ -42,6 +50,7 @@ function Welcome() {
   return (
     <div className='welcome'>
 
+
       <div className="loader"></div>
       <div className="intro">
           <div className="slide active left">
@@ -73,6 +82,7 @@ function Welcome() {
       </div>
 
 
+    <audio id="backgroundAudio" loop src="./bgs.mp3" />
      
 
     </div>
