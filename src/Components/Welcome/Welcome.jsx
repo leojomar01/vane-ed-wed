@@ -40,7 +40,7 @@ function Welcome() {
     slides[0].classList.remove('active');
     slides[1].classList.remove('active');
     heart.classList.remove('active');
-    }, 300);
+    }, 3000);
     return () => clearTimeout(id); 
   }, []);
   
@@ -82,7 +82,7 @@ function Welcome() {
       </div>
 
 
-    <audio id="backgroundAudio" loop src="./bgs.mp3" />
+    <audio id="backgroundAudio" loop src="./bg.mp3" />
      
 
     </div>

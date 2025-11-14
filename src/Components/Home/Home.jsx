@@ -129,15 +129,15 @@ const btnPress = (e) =>{
               <p>MR. BERNARD HERERRA</p>
               <p>ATTY. TOMAS F. LAHOM III</p>
               <p>MR. EFREN CARPIO</p>
+              <p>MR. ROBERTO FLORES</p>
               <p>MR. AL NIETES</p>
               <p>MR. PETRONILO MANALAD</p>
-              <p>MR. CONRAD HIZON</p>
+              <p>MR. CHRISTOPHER DELFIN</p>
               <p>MR. BRAIH MOHD AL-MOAWI</p>
               <p>MR. JOSELITO GONZALES</p>
               <p>MR. JUNE VILLANUEVA</p>
               <p>MR. MARCELO ENRIQUEZ</p>
               <p>MR. ISMAEL TAMAYO</p>
-              <p>MR. CHRISTOPHER DELFIN</p>
               <p>MR. CONRAD HIZON</p>
           </div>
           <div className="godmother">
@@ -146,6 +146,8 @@ const btnPress = (e) =>{
               <p>MRS. ELIZABETH CAMPO</p>
               <p>MRS. JANE VELILIA</p>
               <p>MRS. NENITA CORPUZ</p>
+              <p>MRS. EVELYN CAIRLAN</p>
+              <p>MRS. CORNELIA DE MAYO</p>
               <p>MRS. MARITES BUAN</p>
               <p>MRS. ELVIE QUIJANO</p>
               <p>MRS. LEONIDA ORDOÑEZ</p>
@@ -153,17 +155,10 @@ const btnPress = (e) =>{
               <p>MRS. RHEA UCOL</p>
               <p>MRS. ANNALISSA PINEDA</p>
               <p>MRS. HYACINTH BAÑEZ</p>
-              <p>MRS. CORNELIA DE MAYO</p>
-              <p>MRS. EVELYN CAIRLAN</p>
           </div>
+   
           </div>
-            </div>
-          )}
-
-              {pageCounter===3&&(
-             <div id="secondary-sponsors">
-              <h2 className='ss'>Secondary Sponsor</h2>
-          <div className="bestman-maidofhonor">
+                 <div className="bestman-maidofhonor">
          <div className="bm">
              <h2>Best Man</h2>
             <p>MR. KHIAN RAFAEL I. FRANCISCO</p>
@@ -174,6 +169,13 @@ const btnPress = (e) =>{
             <p>MRS. RAYANA KAMILLE B. MUYOT</p>
           </div>
           </div>
+            </div>
+          )}
+
+              {pageCounter===3&&(
+             <div id="secondary-sponsors">
+              <h2 className='ss'>Secondary Sponsor</h2>
+          
 
   <h2>To Light Our Path</h2>
   <div className="to-light-our-path">
