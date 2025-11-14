@@ -43,7 +43,7 @@ const btnPress = (e) =>{
   console.log(pageCounter)
       const id = setTimeout(() => {
         setBtnShwow(true)
-        }, 300);
+        }, 3500);
     return () => clearTimeout(id);
 }
 
@@ -117,7 +117,7 @@ const btnPress = (e) =>{
             </div>
           )}
 
-          {pageCounter===2&&(
+          {pageCounter===3&&(
             <div id="pri-sponsor">
           <h1>Ignacio - Inocente</h1>
           <h3>Nuptials</h3>
@@ -172,7 +172,7 @@ const btnPress = (e) =>{
             </div>
           )}
 
-              {pageCounter===3&&(
+              {pageCounter===4&&(
              <div id="secondary-sponsors">
               <h2 className='ss'>Secondary Sponsor</h2>
           
@@ -218,7 +218,7 @@ const btnPress = (e) =>{
 
        
 
-              {pageCounter===4&&(
+              {pageCounter===5&&(
             <div id="secondary-sponsor2">
           <div className="bearer">
         <div className="coin-bearer">
@@ -247,6 +247,7 @@ const btnPress = (e) =>{
           <p>JESIAH RAHJE LEXIA SORIANO</p>
           <p>GAVINE IOFEL MATEO</p>
           <p>RYZA IGNACIO</p>
+          <p>PEONY GABRIELLE CARPIO</p>
           <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
           <p>LAURELIN GALADRIEL LAHOM</p>
           <p>AMARAH JAZLYN I. POSADAS</p>
@@ -257,11 +258,73 @@ const btnPress = (e) =>{
         </div>
           )}
 
-        
+          {pageCounter===2&&(
+            <div id="info">
+              <p>WITH THE PRAISE OF THANKSGIVING TO GOD WITH THE BLESSING OF OUR BELOVED PARENTS & GUARDIANS...</p>
+              <div className="guardian">
+                <h3>Mr. Roberto Ignacio</h3>
+                <h3>Mrs. Virginia Inocente</h3>
 
-          {pageCounter===5&&(
+                <h3>Mrs. Felipa Carpio</h3>
+                <h3>Mrs. Liwayway Reyes</h3>
+              </div>
+                <div className="and">&</div>
+            
+              <h4>WE REQUEST THE HONOR OF YOUR PRESENCE AS WE EXCHANGE OUR VOWS ON WEDNESDAY, DECEMBER 10, 2025, 2:30 PM AT</h4>
+                <p>
+                    <a href="https://maps.app.goo.gl/u656ovdZvCZR3fV29">Holy Family Parish Church<span role='tooltip' className='tooltip'>click here to get location</span></a>
+                </p>
+              <h4>RECEPTION WILL FOLLOW AT</h4>
+              <p>
+                <a href="https://maps.app.goo.gl/va4yKroW51jDUKAT8">Danding N. Joson Gym<span role='tooltip' className='tooltip'>click here to get location</span></a>
+              </p>
+
+            </div>
+          )}
+
+          {pageCounter===6&&(
             <div id="details">
-              details
+
+                <div className="side">
+                  <h2>Finer Details</h2>
+                  <h3>Attire Guide</h3>
+                  <p>STRICTLY SEMI FORMAL/CASUAL ATTIRE</p>
+                  <p>WE ENCOURAGE YOU TO DRESS ACCORDING TO OUR WEDDING COLORS</p>
+                  <div className="colors">
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                    <div className="color"></div>
+                  </div>
+                  <h3>Reminder</h3>
+
+                  <div className="pic">
+                  
+                  <div>
+                    <img src="./image/2.png" alt="" />
+                    <p>FINISH THE EVENT</p>
+                  </div>
+                     <div>
+                    <img src="./image/1.png" alt="" />
+                    <p>BE ON TIME</p>
+                  </div>
+                  <div>
+                    <img src="./image/3.png" alt="" />
+                     <p>HAVE FUN!</p>
+                  </div>
+                 
+                   
+                  </div>
+                  <div className="foot">
+                     <h3>Snap & Share</h3>
+                   <p>HELP US CAPTURE OUR SPECIAL DAY AND SHARE IT BY TAGGING US!</p>
+                   <img src="./image/5.png" alt="" />
+                  </div>
+
+                </div>
+                <div className="side"></div>
+
             </div>
           )}
    
@@ -274,7 +337,7 @@ const btnPress = (e) =>{
               </div>
               )}
 
-              {pageCounter<=4 &&(
+              {pageCounter<=5 &&(
                 <div className="btn btn-next" onClick={next}>
                   Next
                 </div>

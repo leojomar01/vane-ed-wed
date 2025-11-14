@@ -3,7 +3,7 @@ import "./welcome.scss";
 import React, { useEffect, useState } from 'react';
 
 function Welcome() {
-  const [btnShow, setBtnShow] = useState(true);
+  const [btnShow, setBtnShow] = useState(false);
   var [pageCounter, setPageCounter] = useState(0);
   // const [loader,setLoader] = useState(true);
   // const [timeoutId, setTimeoutId] = useState(null);
@@ -41,15 +41,24 @@ function Welcome() {
     slides[1].classList.remove('active');
     heart.classList.remove('active');
     }, 3000);
+
     return () => clearTimeout(id); 
   }, []);
+
+   useEffect(() => {
+    const id = setTimeout(() => {
+      setBtnShow(true)
+
+    }, 6000);
+    return () => clearTimeout(id); 
+  }, []);
+  
   
 
 
 
   return (
     <div className='welcome'>
-
 
       <div className="loader"></div>
       <div className="intro">
@@ -82,8 +91,8 @@ function Welcome() {
       </div>
 
 
-    <audio id="backgroundAudio" loop src="./bg.mp3" />
-     
+    <audio id="backgroundAudio" loop src="./music.mp3" />
+
 
     </div>
   );

@@ -4,6 +4,8 @@
     top: 45%;
     left: 50%;
     z-index: 999;
+            backdrop-filter: blur(2px);
+
     *{
         animation: show-ele 3s ease-out forwards;
         opacity:0 ;
@@ -48,6 +50,8 @@
         animation: show-ele 3s ease-out forwards;
         opacity:0 ;
     }
+            backdrop-filter: blur(2px);
+
     position: absolute;
     transform: translate(-50%,-50%);
     top: 45%;
@@ -58,7 +62,7 @@
         color:black;
         animation-delay:1.5s;
     }
-    
+
     h1{
         font-family: font1;
         animation-delay:1s;
@@ -94,16 +98,16 @@
                 animation-delay:#{($i * .2+.5)}+s;
             }
         }
-                    
+
         }
-  
-    }      
+
+    }
     .bestman-maidofhonor{
          display: grid;
         grid-template-columns: 1fr 1fr ;
         gap: .5rem;
     }
-    
+
 }
 
 
@@ -120,11 +124,15 @@
     width: 90vw;
     z-index: 999;
     padding: 1rem;
+            backdrop-filter: blur(2px);
+
     text-align: center;
     .ss{
         text-decoration: underline;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
-    
+
 
      p{
         color: black;
@@ -140,7 +148,7 @@
         margin-top: 1rem;
     }
 
-    
+
     .abay,.to-light-our-path,.to-clothe-us-as-one,.bestman-maidofhonor{
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -170,6 +178,8 @@
         opacity:0 ;
 
     }
+            backdrop-filter: blur(2px);
+
  position: absolute;
     transform: translate(-50%,-50%);
     top: 45%;
@@ -220,3 +230,196 @@
 
 }
 
+
+#info{
+    position: absolute;
+    justify-self: center;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    width: 90vw;
+    padding: 1rem 0 ;
+
+    @for $i from 10 through 0 {
+                div:nth-child(#{$i}){
+                animation-delay:#{($i * .2)}+s;
+            }
+        }
+       @for $i from 10 through 0 {
+                h3:nth-child(#{$i}),h4:nth-child(#{$i}) a:nth-child(#{$i}){
+                animation-delay:#{($i * .2+0)}+s;
+            }
+        }
+    backdrop-filter: blur(2px);
+      *{
+        animation: show-ele 3s ease-out forwards;
+        opacity:0 ;
+    }
+    p{
+        color: black;
+        font-weight: 600;
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+    .guardian{
+        display: grid;
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr 1fr;
+
+        h3{
+            font-size: 18px;
+            font-family: font1;
+            padding:  1rem 0  .2rem 0;
+        }
+    }
+    h4{
+        color: black;
+        margin: 3rem 0;
+    }
+    a{
+        font-family: font1;
+        font-size: 25px;
+
+        .tooltip{
+            visibility: hidden;
+                font-size: 10px;
+                text-shadow: 0 0 0;
+                width: 130px;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                transform: translate(-50%,-50%);
+                left: 50%;
+        }
+        &:hover .tooltip{
+            visibility: visible;
+
+        }
+      
+    }
+     .and{
+            position: absolute;
+             transform: translate(-50%,-50%);
+            top: 25%;
+            color: black;
+            left: 50%;
+            font-family: font1;
+            font-size: 2rem;
+            margin-left: -.5rem;
+        }
+}
+
+#details{
+    z-index: 99;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    height: 90vh;
+    width:90vw;
+    backdrop-filter: blur(2px);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    *{
+        animation: show-ele 3s ease-out forwards;
+        opacity:0 ;
+    }
+    .side{
+
+    }
+    .colors{
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+    }
+    .color{
+        margin: .5rem;
+        background-color: red;
+        border-radius: 50%;
+        box-shadow: 3px 2px black;
+        height: 25px;
+        aspect-ratio: 1/1;
+
+        &:nth-child(1){
+            background-color: #563830;
+        }
+        &:nth-child(2){
+            background-color: #976451;
+        }
+        &:nth-child(3){
+            background-color: #af9c8d;
+        }
+        &:nth-child(4){
+            background-color: #c7ac91;
+        }
+        &:nth-child(5){
+            background-color: #f5e6d1;
+        }
+    }
+    h2{
+        font-family: font1;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-family: font2;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 2.2rem;
+
+
+    }
+    p{
+        font-size: .7rem;
+        font-weight: 800;
+        margin-bottom: .5rem;
+    }
+    img{
+        height: 15vh;
+    }
+
+    .pic{
+            top: 10%;
+        div{
+            position: absolute;
+            &:nth-child(1){
+                right: 2%;
+            }
+
+            &:nth-child(2){
+                left: 0%;
+                top: 30%;
+            }
+              &:nth-child(3){
+                left: 30%;
+                top: 45%;
+            }
+        }
+    }
+
+    .foot{
+        margin-top: 20vh;
+        img{
+            height: 30px;
+        }
+    }
+
+       @for $i from 16 through 0 {
+                div:nth-child(#{$i}){
+                animation-delay:#{($i * .2+3)}+s;
+            }
+        }
+
+        @for $i from 16 through 0 {
+                h2:nth-child(#{$i}){
+                animation-delay:#{($i * .2+1)}+s;
+            }
+        }
+}

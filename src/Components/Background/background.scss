@@ -29,14 +29,11 @@
                 left: 50%;
                 height: 50vw;
                 aspect-ratio: 1/1;
-                background-color: white;
                 background-position: center;
                 background-repeat: no-repeat;
-                 mask-image: url('../../image/EV.png');
-                mask-repeat: no-repeat;
-                mask-size: 25vw;
-                mask-position: center;
-                mask-border: url('../../image/EV.png') 15 space;
+                background-image: url('../../image/EV.png');
+                background-size: 25vw;
+     
         }
 }
 .heart.active,.btns.active{
@@ -47,6 +44,7 @@
         .name{
                 mask-size: 250vw;
                 height: 500vw;
+                background-size: 0vw;
 
         }
 
