@@ -264,7 +264,7 @@ const btnPress = (e) =>{
             <p>GAVINE IOFEL MATEO</p>
             <p>RYZA IGNACIO</p>
             <p>PEONY GABRIELLE CARPIO</p>
-            <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
+            <p>LOUVILLE HARMONY O. IGNACIO</p>
             <p>AMARAH JAZLYN I. POSADAS</p>
           </div>
          
