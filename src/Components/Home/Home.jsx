@@ -290,7 +290,7 @@ const btnPress = (e) =>{
                 </p>
               <h4>RECEPTION WILL FOLLOW AT</h4>
               <p>
-                <a href="https://maps.app.goo.gl/va4yKroW51jDUKAT8">Danding N. Joson Gym<span role='tooltip' className='tooltip'>click here to get location</span></a>
+                <a href="https://maps.app.goo.gl/gN7fjM6A1CLUNXjn8">Danding N. Joson Gym<span role='tooltip' className='tooltip'>click here to get location</span></a>
               </p>
 
             </div>
