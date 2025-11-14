@@ -17,7 +17,7 @@ function Welcome() {
   };
 
   const rbtn = () => {
-    
+    playBg()
     setBtnShow(false)
     const slides = document.querySelectorAll('.slide');
     const heart = document.querySelector('.heart');

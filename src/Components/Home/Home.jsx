@@ -252,16 +252,22 @@ const btnPress = (e) =>{
 
         <h2>Bearers & Flower Girls</h2>
         <div className="bearers-and-flower-girls">
-          <p>JESIAH RAHJE LEXIA SORIANO</p>
-          <p>GAVINE IOFEL MATEO</p>
-          <p>RYZA IGNACIO</p>
-          <p>PEONY GABRIELLE CARPIO</p>
-          <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
-          <p>LAURELIN GALADRIEL LAHOM</p>
-          <p>AMARAH JAZLYN I. POSADAS</p>
+           <div className="boys">
+            <p>MARK ROLAN CODILANA JR.</p>
           <p>JAIDEN CAMRON P. IGNACIO</p>
-          <p>MARK ROLAN CODILANA JR.</p>
           <p>MATT CAYDENN GO</p>
+          <p>KHENLY AIDEN MARASIGAN</p>
+          </div>
+          <div className="girl">
+            <p>JESIAH RAHJE LEXIA SORIANO</p>
+            <p>LAURELIN GALADRIEL LAHOM</p>
+            <p>GAVINE IOFEL MATEO</p>
+            <p>RYZA IGNACIO</p>
+            <p>PEONY GABRIELLE CARPIO</p>
+            <p>LOUVILLE HARMONY SAIGE O. IGNACIO</p>
+            <p>AMARAH JAZLYN I. POSADAS</p>
+          </div>
+         
         </div>
         </div>
           )}
