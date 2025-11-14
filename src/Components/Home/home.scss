@@ -1,11 +1,12 @@
 $border-color: 2px solid rgb(59, 4, 4);
-$b-size:40;
+$b-size:30;
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 .home{
     *{
         animation-delay: 10s;
@@ -42,70 +43,103 @@ $b-size:40;
         left: 50%;
         height: 80vh;
         width: 80vw;
-        .border:nth-child(1){
+        .border{
+            transition: 3.5s;
             position: absolute;
+        }
+        .border:nth-child(1){
             bottom: 0;
             left: 0;
             height: inherit;
-            position: absolute;
-            animation: border-vert 2s ease-in-out  ;
-            width:$b-size+vw;;
             border-bottom: $border-color;
-            transition: 2s;
+            animation: border-vert 3.5s ;
+
         }
           .border:nth-child(2){
-            position: absolute;
             bottom: 0;
             right: 0;
             height: inherit;
-            position: absolute;
-            width:$b-size+vw;
-            animation: border-vert 2s ease-in-out  ;
             border-top: $border-color;
-            transition: 2s;
+            animation: border-vert 3.5s ;
+
         }
           .border:nth-child(3){
-            position: absolute;
             bottom: 0;
             right: 0;
-            height: $b-size+vh;
-            position: absolute;
             width:inherit;
             border-left: $border-color;
-            animation: border-hor 2s ease-in-out  ;
-            transition: 2s;
+            animation: border-hor 3.5s ;
+
         }
           .border:nth-child(4){
-            position: absolute;
             top: 0;
             right: 0;
-            height: $b-size+vh;
-            position: absolute;
             width:inherit;
             border-right: $border-color;
-            animation: border-hor 2s ease-in-out  ;
-            transition: 2s;
+            animation: border-hor 3.5s ;
         }
   
     }
     
 }
 
+
+
+
+.border-frame.page1,.border-frame.page4{
+    .border:nth-child(1){
+        width:30vw;
+    }
+    .border:nth-child(2){
+        width: 40vw;
+    }
+    .border:nth-child(3){
+        height: 50vh;
+    }
+    .border:nth-child(4){
+        height: 70vh;
+    }
+}
+.border-frame.page2,.border-frame.page6{
+    .border:nth-child(1){
+        width:80vw;
+    }
+    .border:nth-child(2){
+        width: 80vw;
+    }
+    .border:nth-child(3){
+        height: 10vh;
+    }
+    .border:nth-child(4){
+        height: 10vh;
+    }
+}
+.border-frame.page3,.border-frame.page5{
+    .border:nth-child(1){
+        width:70vw;
+    }
+    .border:nth-child(2){
+        width: 70vw;
+    }
+    .border:nth-child(3){
+        height: 60vh;
+        bottom: 50%;
+    }
+    .border:nth-child(4){
+        height: 60%;
+        top: 50%;
+    }
+}
+
 @keyframes border-vert {
-    0%{
+    from{
         width:0;
     }
-    100%{
-        width:$b-size+vw;;
-    }
-    
 }
 @keyframes border-hor {
-    0%{
+    from{
         height:0;
-    }
-    100%{
-        height:$b-size+vh;;
+        
     }
     
 }

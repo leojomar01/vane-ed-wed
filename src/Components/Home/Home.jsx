@@ -25,8 +25,10 @@ const back = ()=>{
 
 useEffect(()=>{
         const flowers = document.querySelector('.flowers');
+        const borders = document.querySelector('.border-frame');
         setTimeout(() => {
         flowers.classList.add('page1')
+        borders.classList.add('page1')
         }, 100);
 },[])
 
@@ -34,11 +36,17 @@ useEffect(()=>{
 
 const btnPress = (e) =>{
         const flowers = document.querySelector('.flowers');
+        const borders = document.querySelector('.border-frame');
         flowers.classList.remove(`page${pageCounter}`)
+        borders.classList.remove(`page${pageCounter}`)
+
+
         if(e===1){
           flowers.classList.add(`page${pageCounter+1}`)
+          borders.classList.add(`page${pageCounter+1}`)
         }else{
           flowers.classList.add(`page${pageCounter-1}`)
+          borders.classList.add(`page${pageCounter-1}`)
         }
   console.log(pageCounter)
       const id = setTimeout(() => {
