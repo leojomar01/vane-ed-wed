@@ -25,7 +25,7 @@ const btnPress = () =>{
 
   const id = setTimeout(() => {
      setBtnShwow(true)
-    }, 3000);
+    }, 300);
     return () => clearTimeout(id);
 }
 
@@ -88,6 +88,7 @@ const btnPress = () =>{
               <p>ATTY. TOMAS F. LAHOM III</p>
               <p>MR. EFREN CARPIO</p>
               <p>MR. AL NIETES</p>
+              <p>MR. PETRONILO MANALAD</p>
               <p>MR. CONRAD HIZON</p>
               <p>MR. BRAIH MOHD AL-MOAWI</p>
               <p>MR. JOSELITO GONZALES</p>
@@ -95,9 +96,10 @@ const btnPress = () =>{
               <p>MR. MARCELO ENRIQUEZ</p>
               <p>MR. ISMAEL TAMAYO</p>
               <p>MR. CHRISTOPHER DELFIN</p>
+              <p>MR. CONRAD HIZON</p>
           </div>
           <div className="godmother">
-               <p>MRS. JIN MACASPAC</p>
+              <p>MRS. JIN MACASPAC</p>
               <p>HON. NIÑA PAULEEN N. JOSON</p>
               <p>MRS. ELIZABETH CAMPO</p>
               <p>MRS. JANE VELILIA</p>
