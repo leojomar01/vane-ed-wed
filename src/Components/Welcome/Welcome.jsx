@@ -17,7 +17,7 @@ function Welcome() {
   };
 
   const rbtn = () => {
-    playBg()
+    
     setBtnShow(false)
     const slides = document.querySelectorAll('.slide');
     const heart = document.querySelector('.heart');
@@ -40,6 +40,7 @@ function Welcome() {
     slides[0].classList.remove('active');
     slides[1].classList.remove('active');
     heart.classList.remove('active');
+    playBg()
     }, 3000);
 
     return () => clearTimeout(id); 
