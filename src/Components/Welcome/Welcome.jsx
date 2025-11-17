@@ -83,7 +83,7 @@ function Welcome() {
       )}
       {btnShow && (
         <div  className="btns pbtn active" onClick={rbtn}>
-          Touch to here continue
+          Touch here to continue
         </div>
       )}
 
