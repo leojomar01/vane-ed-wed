@@ -3,7 +3,6 @@ import './home.scss';
 import './flower-pos.scss';
 import './new-flower-pos.scss';
 import './intro.scss';
-// import './fl.scss';
 import './btn.scss';
 
 function Home() {
@@ -113,38 +112,7 @@ const btnPress = (e) =>{
             <img src="./image/f2.png" alt="" />
           </div>
         </div>
-      {/* <div className="flowers">
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-          <div className="flower">
-            <div className="f1"></div>
-          </div>
-      </div> */}
+    
 
 
 
