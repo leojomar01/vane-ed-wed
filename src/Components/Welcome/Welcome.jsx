@@ -82,7 +82,7 @@ function Welcome() {
         <Home/>
       )}
       {btnShow && (
-        <div className="btns active" onClick={rbtn}>
+        <div  className="btns pbtn active" onClick={rbtn}>
           Touch to here continue
         </div>
       )}
