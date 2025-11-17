@@ -70,6 +70,7 @@ const btnPress = (e) =>{
           </div>
         </div>
         <div className="petals"></div>
+        <div className="petals2"></div>
         
 
 
@@ -281,7 +282,7 @@ const btnPress = (e) =>{
                 <h3>Mr. Roberto Ignacio</h3>
                 <h3>Mrs. Virginia Inocente</h3>
 
-                <h3>Mrs. Felipa Carpio</h3>
+                <h3>Ms. Felipa Carpio</h3>
                 <h3>Mrs. Liwayway Reyes</h3>
               </div>
                 <div className="and">&</div>

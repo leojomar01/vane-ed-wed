@@ -5,10 +5,10 @@
         aspect-ratio: 1/1;
         position: absolute;
         &:nth-child(odd){
-            animation: flower1-ani 4s , zoom-in infinite 80s;
+            animation: flower1-ani 4s , zoom-in infinite 50s;
         }
         &:nth-child(even){
-            animation: flower1-ani 4s , zoom-in infinite 75s;
+            animation: flower1-ani 4s , zoom-in infinite 45s;
         }
         img{
             height: inherit;
