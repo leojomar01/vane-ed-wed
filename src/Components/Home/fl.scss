@@ -1,0 +1,117 @@
+.flowers{
+    height: 100vh;
+    width: 100vw;
+    // background-color: red;
+    position: absolute;
+    top: 0;
+    *{
+        transition: 5.5s;
+    }
+    .flower{
+        position: absolute;
+            aspect-ratio: 1/1;
+            height: 10vh;
+            border-radius: 50%;
+        .f1{
+            position: absolute;
+            height: 50vw;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 40vw ; 
+            animation: flower1-ani 5s ;
+        }
+    }
+    .flower:nth-child(1){
+            top: 33%;
+            left: 0%;
+        .f1{
+            background-image: url('../../image/f1.png');
+                transform: rotate(-10deg) ;
+        }
+    } 
+
+    .flower:nth-child(2){
+            top: 38%;
+            left: 0%;
+        .f1{
+            background-image: url('../../image/f1.png');
+                transform: rotate(-10deg) ;
+            background-size: auto 30vw ; 
+        }
+    } 
+     .flower:nth-child(3){
+            top: -5%;
+            right: 25%;
+        .f1{
+            background-image: url('../../image/f2.png');
+            background-size: auto 50vw ; 
+                transform: rotate(-10deg) ;
+
+        }
+    }  .flower:nth-child(4){
+            top: 5%;
+            left: 70%;
+        .f1{
+            background-image: url('../../image/f2.png');
+            background-size: auto 50vw ; 
+            transform: rotate(140deg)  scalex(-1);
+        }
+    }  .flower:nth-child(5){
+            top: 72%;
+            left: -9%;
+        .f1{
+            background-image: url('../../image/f2.png');
+                transform: rotate(160deg) ;
+            background-size: auto 50vw ; 
+        }
+    }  .flower:nth-child(6){
+            top: 75%;
+            left: 15%;
+        .f1{
+            background-image: url('../../image/f2.png');
+            background-size: auto 50vw ; 
+            transform: rotate(-120deg) scalex(-1) ;
+
+        }
+    }  .flower:nth-child(7){
+            top: 58%;
+            left: 65%;
+        .f1{
+            background-image: url('../../image/f3.png');
+            background-size: auto 30vw ; 
+
+        }
+    }  .flower:nth-child(8){
+            top: 58%;
+            left: 5%;
+        .f1{
+            background-image: url('../../image/f3.png');
+                transform: rotate(-10deg) ;
+            background-size: auto 30vw ; 
+        }
+    }  .flower:nth-child(2){
+            top: 38%;
+            left: 5%;
+        .f1{
+            background-image: url('../../image/f1.png');
+                transform: rotate(-10deg) ;
+            background-size: auto 30vw ; 
+        }
+    }  .flower:nth-child(2){
+            top: 38%;
+            left: 5%;
+        .f1{
+            background-image: url('../../image/f1.png');
+                transform: rotate(-10deg) ;
+            background-size: auto 30vw ; 
+        }
+    } 
+}
+
+@keyframes flower1-ani{
+    from{
+        opacity: 0;
+        background-size: 0vw 0vw;
+    }
+}

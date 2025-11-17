@@ -1,20 +1,23 @@
 .flowers {
+    *{
+        transition: .5s;
+    }
     .flower{
         height: 0vh;
         aspect-ratio: 1/1;
         position: absolute;
         &:nth-child(odd){
-            animation: flower1-ani 4s , fmove infinite 20s;
+            animation: flower1-ani 4s , zoom-in infinite 80s;
         }
         &:nth-child(even){
-            animation: flower1-ani 4s , fmove infinite 15s;
+            animation: flower1-ani 4s , zoom-in infinite 75s;
         }
         img{
             height: inherit;
             position: absolute;
         }
         &:nth-child(1){
-            top: 23%;
+            top: 3%;
             left: 5%;
             img{
                 transform: rotate(-10deg) ;
@@ -109,8 +112,8 @@
             height: inherit;
         }
         &:nth-child(1){
-            top: 63%;
-            left: 65%;
+            top: 53%;
+            left: 45%;
             height: 30vh;
             img{
                 transform: rotate(20deg)  scalex(-1);
@@ -118,8 +121,8 @@
             }
         }
         &:nth-child(2){
-            top: 49%;
-            left: 7%;
+            top: 39%;
+            left: -12%;
             height: 40vh;
             img{
                 transform: rotate(-6deg) ;
@@ -127,34 +130,34 @@
             }
         }
         &:nth-child(3){
-            top: 10%;
-            right: 40%;
+            top: -10%;
+            right: 75%;
             height: 40vh;
             img{
                 transform: rotate(260deg) ;
             }
         }
         &:nth-child(5){
-            top: 7%;
-            right:-10%;
+            top: -7%;
+            right:10%;
             height: 30vh;
             img{
                 transform: rotate(440deg)  scalex(-1);
             }
         }
           &:nth-child(4){
-            top: 90%;
-            right: 42%;
+            top: 66%;
+            right:77%;
             img{
                 transform: rotate(280deg)  scaleX(-1);
             }
         }
          &:nth-child(6){
-            top: 0%;
-            right: -15%;
-            height: 40vh;
+            top: -15%;
+            right: 25%;
+            height: 45vh;
             img{
-                transform: rotate(280deg) scalex(1) ;
+                transform: rotate(320deg) scalex(1) ;
             }
         }
             &:nth-child(7){
@@ -174,25 +177,25 @@
             }
         }
              &:nth-child(9){
-            top: 90%;
-            right: 0%;
+            top: 20%;
+            right: 25%;
             height: 20vh;
             img{
-                transform: rotate(-40deg) ;
+                transform: rotate(-100deg) ;
             }
         }
                  &:nth-child(11){
-            top: 98%;
-            right: 50%;
-            height: 20vh;
+            top: 78%;
+            right: 30%;
+            height: 25vh;
             img{
                 transform: rotate(360deg) ;
             }
         }
                       &:nth-child(10){
-            top: 98%;
+            top: 78%;
             right: 100%;
-            height: 20vh;
+            height: 30vh;
             img{
                 transform: rotate(360deg) ;
             }
@@ -214,49 +217,50 @@
         img{
             height: inherit;
             position: absolute;
+
         }
         &:nth-child(1){
-            top: 33%;
-            left: 5%;
+            top: 23%;
+            left: -15%;
             img{
-                transform: rotate(-10deg) ;
+
             }
         }
         &:nth-child(2){
             top: 38%;
-            left: 7%;
+            left: -7%;
             height: 25vh;
             img{
                 transform: rotate(-6deg) ;
             }
         }
         &:nth-child(3){
-            top: 10%;
-            right: -40%;
+            top: -5%;
+            right:5%;
             height: 40vh;
             img{
                 transform: rotate(-10deg) ;
             }
         }
         &:nth-child(4){
-            top: 7%;
-            right: -15%;
+            top: -10%;
+            right: 15%;
             height: 40vh;
             img{
                 transform: rotate(60deg)  scalex(-1);
             }
         }
           &:nth-child(5){
-            top: 90%;
-            right:42%;
+            top: 68%;
+            right:78%;
             height: 40vh;
             img{
                 transform: rotate(160deg) ;
             }
         }
          &:nth-child(6){
-            top: 87%;
-            right: 25%;
+            top: 70%;
+            right: 60%;
             height: 40vh;
             img{
                 transform: rotate(-120deg) scalex(-1) ;
@@ -264,30 +268,30 @@
         }
             &:nth-child(7){
             top: 53%;
-            right: -45%;
+            right: -2%;
             img{
                 transform: rotate(-20deg) scalex(-1) ;
             }
         }
                &:nth-child(8){
-            top: 65%;
-            right: -25%;
+            top: 75%;
+            right: 5%;
             height: 20vh;
             img{
                 transform: rotate(-20deg) scalex(-1) ;
             }
         }
              &:nth-child(9){
-            top: 95%;
-            right: 20%;
+            top: 80%;
+            right: 29%;
             height: 20vh;
             img{
                 transform: rotate(-10deg) ;
             }
         }
                  &:nth-child(10){
-            top: 0%;
-            right: 80%;
+            top: -8%;
+            right: 90%;
             height: 20vh;
             img{
                 transform: rotate(-180deg) ;
@@ -320,15 +324,16 @@
             position: absolute;
         }
         &:nth-child(5){
-            top: 3%;
-            left: 5%;
+            top: -20%;
+            left: 0%;
+            height: 50vh;
             img{
                 transform: rotate(-50deg) ;
             }
         }
         &:nth-child(9){
-            top: 2%;
-            left: 7%;
+            top: -12%;
+            left: -7%;
             height: 25vh;
             img{
                 transform: rotate(-186deg) ;
@@ -336,31 +341,31 @@
         }
         &:nth-child(12){
             top: 10%;
-            right: -30%;
-            height: 40vh;
+            right: 5%;
+            height: 50vh;
             img{
                 transform: rotate(30deg) ;
             }
         }
         &:nth-child(4){
-            top: 57%;
-            right: -35%;
+            top: 37%;
+            right:2%;
             height: 40vh;
             img{
                 transform: rotate(120deg)  scalex(-1);
             }
         }
           &:nth-child(1){
-            top: 90%;
-            right:42%;
-            height: 30vh;
+            top: 60%;
+            left: -17%;
+            height: 35vh;
             img{
                 transform: rotate(3deg) ;
             }
         }
          &:nth-child(6){
-            top: 93%;
-            right: 65%;
+            top: 73%;
+            right: 85%;
             height: 30vh;
             img{
                 transform: rotate(-120deg) scalex(-1) ;
@@ -375,31 +380,31 @@
         }
                &:nth-child(8){
             top: 65%;
-            right: -10%;
+            right: 10%;
             height:20vh;
             img{
                 transform: rotate(0deg) scalex(-1) ;
             }
         }
              &:nth-child(2){
-            top: 95%;
-            right: 0%;
+            top: 75%;
+            left: 00%;
             height: 20vh;
             img{
                 transform: rotate(-10deg) ;
             }
         }
                  &:nth-child(10){
-            top: 3%;
-            right: 90%;
+            top: -10%;
+            right: 100%;
             height: 20vh;
             img{
                 transform: rotate(-200deg) ;
             }
         }
         &:nth-child(7){
-            top: 98%;
-            right: -100%;
+            top: 9%;
+            right: 0%;
             height: 0vh;
             img{
                 transform: rotate(360deg) ;
