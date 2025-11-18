@@ -51,7 +51,7 @@ const btnPress = (e) =>{
   console.log(pageCounter)
       const id = setTimeout(() => {
         setBtnShwow(true)
-        }, 300);
+        }, 3500);
     return () => clearTimeout(id);
 }
 
