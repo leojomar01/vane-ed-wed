@@ -136,7 +136,7 @@ const btnPress = (e) =>{
           <h2>Principal Sponsor</h2>
           <div className="sponsor">
             <div className="godfather">
-              <p>MR. EDUARDO BASILIO N. JOSON</p>
+              <p>MR. EDUARDO BASILIO M. JOSON</p>
               <p>MR. BERNARD HERERRA</p>
               <p>ATTY. TOMAS F. LAHOM III</p>
               <p>MR. EFREN CARPIO</p>
